@@ -1,0 +1,45 @@
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block" onclick="changeColor('red')" style="background-color: red;">Red</div>
+        <div class="block" onclick="changeColor('orange')" style="background-color: orange;">Orange</div>
+        <div class="block" onclick="changeColor('yellow')" style="background-color: yellow;">Yellow</div>
+        <div class="block" onclick="changeColor('green')" style="background-color: green;">Green</div>
+        <div class="block" onclick="changeColor('blue')" style="background-color: blue;">Blue</div>
+        <div class="block" onclick="changeColor('indigo')" style="background-color: indigo;">Indigo</div>
+        <div class="block" onclick="changeColor('violet')" style="background-color: violet;">Violet</div>
+        <div class="block" onclick="changeColor('pink')" style="background-color: pink;">Pink</div>
+        <div class="block" onclick="changeColor('brown')" style="background-color: brown;">Brown</div>
+        <div class="block" onclick="changeColor('gray')" style="background-color: gray;">Gray</div>
+        <div class="block" onclick="changeColor('purple')" style="background-color: purple;">Purple</div>
+        <div class="block" onclick="changeColor('cyan')" style="background-color: cyan;">Cyan</div>
+    </div>
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
